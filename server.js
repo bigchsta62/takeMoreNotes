@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const dbjson = require("../db/db.json")
+const dbjson = require("./Develop/db/db.json");
 // Sets up the Express App
 // =============================================================
 const app = express();
@@ -40,29 +40,29 @@ app.get("/api/notes/:id", function (req, res) {
 });
 // Create New Notes - takes in JSON input
 app.post("/api/notes", function (req, res) {
-    // req.body hosts is equal to the JSON post sent from the user
-    e
+    // req.body is equal to the JSON post sent from the user
     const newNote = req.body;
-    newNote.id = Date.now()
+    //newNote.id gives each new note a UNIX timestamp
+    newNote.id = Date.now();
     console.log(newNote);
     fs.readFile("./db/db.json", "utf8", function (error, data) {
         if (error) {
             return console.log(error);
         }
-        let notes = JSON.parse(data)
+        let notes = JSON.parse(data);
         notes.push(newNote);
-        let notesString = JSON.stringify(notes);
-        fs.writeFile('./db/db.json', notesString, function (err) {
+        let readNotes = JSON.stringify(notes);
+        fs.writeFile("./db/db.json", readNotes, function (err) {
             if (err) {
                 return console.log(err);
             }
             console.log("Success!");
             res.json(newNote);
-        })
+        });
         console.log(data);
     });
-
 });
+//Allows notes to be deleted
 app.delete("/api/notes/:id", function (req, res) {
     const choose = req.params.id;
     console.log(choose);
@@ -70,27 +70,24 @@ app.delete("/api/notes/:id", function (req, res) {
         if (error) {
             return console.log(error);
         }
-        let notes = JSON.parse(data)
+        let notes = JSON.parse(data);
         const keep = [];
         for (let i = 0; i < notes.length; i++) {
             if (choose != notes[i].id) {
                 keep.push(notes[i]);
-
             }
         }
         let keepers = JSON.stringify(keep);
 
-
-        fs.writeFile('./db/db.json', keepers, function (err) {
+        fs.writeFile("./db/db.json", keepers, function (err) {
             if (err) {
                 return console.log(err);
             }
             console.log("Success!");
             res.json(keepers);
-        })
+        });
         console.log(data);
     });
-
 });
 
 app.get("*", function (req, res) {
