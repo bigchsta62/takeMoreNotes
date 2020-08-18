@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const dbjson = require("../db/db.json");
+const dbjson = require("./Develop/db/db.json");
 // Sets up the Express App
 // =============================================================
 const app = express();
