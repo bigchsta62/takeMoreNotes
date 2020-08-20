@@ -11,10 +11,12 @@
 
 
 ## Installation
- * Fork the repo and follow the intsructions here .... for heroku deployment
+ * Fork the repo and follow the intsructions here https://devcenter.heroku.com/categories/nodejs-support for heroku deployment
 
 ## Usage
  This can be used by an individual or team o leave notes and keep track of things to do.
+ ![Start page](https://github.com/bigchsta62/takeMoreNotes/blob/master/app/images/Note%20taker%201.jpg?raw=true)
+ ![Notes](https://github.com/bigchsta62/takeMoreNotes/blob/master/app/images/note%20taker%202.jpg?raw=true)
 
 ## License
 This application is covered under the following license(s)
@@ -33,6 +35,7 @@ Share it if you find it useful.
  None.
 
 ## Questions
+Link to deployed app:  https://take-more-notes.herokuapp.com/
 Link to this repo:  https://github.com/bigchsta62/takeMoreNotes
 
 Contact me:  bigchsta62@msn.com
