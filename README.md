@@ -11,7 +11,16 @@
 
 
 ## Installation
- * Fork the repo and follow the intsructions here https://devcenter.heroku.com/categories/nodejs-support for heroku deployment
+ * Fork the repo and follow the intsructions here:
+   https://devcenter.heroku.com/categories/nodejs-support for heroku deployment
+   
+  ### This is optional if you want to clone the repo and make changes to it.
+ * Clone the repo to your local machine 
+   
+ * If you don't have Node JS installed go here and follow the instructions:
+   https://www.npmjs.com/get-npm
+   
+ * Have fun!
 
 ## Usage
  This can be used by an individual or team o leave notes and keep track of things to do.
