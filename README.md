@@ -17,7 +17,7 @@
   ### This is optional if you want to clone the repo and make changes to it.
  * Clone the repo to your local machine 
    
- * If you don't have Node JS installed go here and follow the instructions:
+ * If you don't have Node JS installed, go here and follow the instructions:
    https://www.npmjs.com/get-npm
    
  * Have fun!
