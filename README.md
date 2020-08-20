@@ -23,7 +23,7 @@
  * Have fun!
 
 ## Usage
- This can be used by an individual or team o leave notes and keep track of things to do.
+ This can be used by an individual or team to leave notes and keep track of important tasks.
  ![Start page](https://github.com/bigchsta62/takeMoreNotes/blob/master/app/images/Note%20taker%201.jpg?raw=true)
  ![Notes](https://github.com/bigchsta62/takeMoreNotes/blob/master/app/images/note%20taker%202.jpg?raw=true)
 
